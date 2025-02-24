@@ -172,3 +172,5 @@ cython_debug/
 
 
 node_modules
+.env
+personalportfolio/src/components/Contact/index.js
