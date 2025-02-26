@@ -127,3 +127,67 @@ ul {
       }
     }
   }
+
+  .hamburger-icon, .close-icon
+  {
+    display: none;
+  } 
+
+  @media screen and (max-width: 1000px) {
+    .nav-bar{
+      background: transparent;
+      position: initial;
+      height: auto;
+      min-height: auto;
+
+      ul, nav {
+        display: none;
+      }
+
+      nav {
+        position: fixed;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        background: #181818;
+        text-align: center;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        a:after{
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10px;
+        }
+
+        a svg{
+          opacity: 1 !important;
+        }
+
+        &.mobile-show{
+          display: block;
+        }
+      }
+
+      .hamburger-icon, .close-icon{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 19;
+        cursor: pointer;
+      }
+
+      .logo{
+        display: none;
+      }
+    }
+  }

@@ -151,3 +151,11 @@
         }
       }
 }
+
+@media screen and (max-width: 1000px){
+  .contact-page {
+    .note-zone {
+      display: none;
+    }
+  }
+}

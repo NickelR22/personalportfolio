@@ -25,7 +25,7 @@ const Contact = () => {
               e.preventDefault()
             },
             () => {
-              alert('Failed to send the message, please try again')
+              alert('Failed to send the message, please try again or email nranjit@scu.edu directly.')
             }
           )
           .finally(() => {
@@ -42,8 +42,7 @@ const Contact = () => {
                     <h1>Contact Me</h1>
                 </div>
                 <div className = 'note-zone'>
-                    <p>Currently open to work. Feel free to email if you have questions.
-                        If form does not work please directly email nranjit@scu.edu</p>
+                    <p>Currently open to work. Feel free to email if you have questions.</p>
                 </div>
             </div>
             <div className = 'contact-form'>

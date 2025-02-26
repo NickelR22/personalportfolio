@@ -12,7 +12,7 @@ const Projects = () => {
   const projects = [
     {
       title: "FSAE (Formula E Student Competition)",
-      description: "As a member of the electrical team, my job was to make the GUI for the driver which displays critical race data for the driver. I used PySimpleGUI to create it. Another task of min is creating the wiring diagram for the cockpit of the car and ensuring that it meets all technical standads (not shows for obvious reasons).",
+      description: "As a member of the electrical team, my job was to make the GUI for the driver which displays critical race data for the driver. I used PySimpleGUI to create it. Another task of mine was creating the wiring diagram for the cockpit of the car and ensuring that it meets all technical standads.",
       image: FSAE,
     },
     {
@@ -27,12 +27,12 @@ const Projects = () => {
     },
     {
       title: "AI Game Player",
-      description: " I used the NEAT algorithm to create a bot that plays the no internet chrome dinosaur game. I used pygame to reacreate the game.",
+      description: " I used the NEAT algorithm to create a bot that plays the no internet chrome dinosaur game. I used pygame to recreate the game.",
       image: Dino,
     },
     {
       title: "Mastermind",
-      description: "I recreated the board game mastermind in unity where the computer would generate a code and the player would try to guess it. I implemented settings that control how many rows and colors there are as well as enabling/disabling duplicates. The code was published to iOS using Xcode.",
+      description: "I recreated the board game Mastermind in Unity where the computer would generate a code and the player would try to guess it. I implemented settings that control how many rows and colors there are as well as enabling/disabling duplicates. The code was published to iOS using Xcode.",
       image: mastermind,
     },
   ];
@@ -56,9 +56,11 @@ const Projects = () => {
     
     const translateX = Math.sin(angle * Math.PI / 180) * radius;
     const translateZ = (Math.cos(angle * Math.PI / 180) - 1) * radius;
+  
+    const xOffset = offset < 0 ? 15 : -35;
     
     return {
-      transform: `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${angle}deg)`,
+      transform: `translateX(${translateX + xOffset}px) translateZ(${translateZ}px) rotateY(${angle}deg)`,
       opacity: Math.abs(offset) <= 1 ? 1 : 0,
     };
   };

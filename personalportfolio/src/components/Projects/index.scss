@@ -14,6 +14,7 @@
     height: 600px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease;
+    padding-right: 222; // Center the container horizontally
 
     .card {
       position: absolute;

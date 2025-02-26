@@ -27,3 +27,15 @@
         animation: fadeIn 1s 1.8s backwards;
       }
 }
+
+@media screen and (max-width: 1000px){
+    .home-page {
+        .text-zone {
+            position: absolute;
+            left: 10%;
+            top: 200px;
+            width: 80%;
+            left: 10%;
+        }
+    }
+}
