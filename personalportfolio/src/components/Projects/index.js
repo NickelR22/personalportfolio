@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './index.scss';
 import AWS from '../../assets/images/AWS.png'
-import FSAE from '../../assets/images/FSAE.png'
+import FSAE from '../../assets/images/BR1.png'
 import Dino from '../../assets/images/Dino.png'
 import mastermind from '../../assets/images/mastermind.png'
 import skyline from '../../assets/images/skylineresults.png'
 import H4H from '../../assets/images/H4H.png'
 import SS from '../../assets/images/SS.png'
+
 
 
 const Projects = () => {
