@@ -4,16 +4,34 @@ import AWS from '../../assets/images/AWS.png'
 import FSAE from '../../assets/images/FSAE.png'
 import Dino from '../../assets/images/Dino.png'
 import mastermind from '../../assets/images/mastermind.png'
+import skyline from '../../assets/images/skylineresults.png'
+import H4H from '../../assets/images/H4H.png'
 import SS from '../../assets/images/SS.png'
+
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const projects = [
     {
+      title: "Shape Sensing Research",
+      description: "Conducting research on shape sensing for soft robotics, exploring methods for estimating the configuration of flexible robotic structures without rigid joint encoders. The project investigates sensing approaches using conductive elastomers and optical sensing systems to reconstruct the shape of continuum robotic spines. The goal is to develop scalable sensing architectures for soft robots with applications in medical robotics and surgical manipulators, with plans to publish the work in a soft robotics journal.",
+      image: SS,
+    },
+    {
       title: "FSAE (Formula E Student Competition)",
-      description: "As a member of the electrical team, my job was to make the GUI for the driver which displays critical race data for the driver. I used PySimpleGUI to create it. Another task of mine was creating the wiring diagram for the cockpit of the car and ensuring that it meets all technical standads.",
+      description: "Wiring and Integration Lead for the Bronco Racing Formula SAE Electric team. I was responsible for designing and implementing the vehicle’s Ground Low Voltage (GLV) electrical system. Responsibilities include wiring harness design, CAN bus integration between vehicle subsystems, and fuse distribution architecture while ensuring compliance with FSAE EV safety regulations. The system provides reliable communication and power distribution for critical electronics in a high-performance electric race car.",
       image: FSAE,
+    },
+    {
+      title: "Drone Delivery Research",
+      description: "Built a physics-based UAV simulation environment in MATLAB and Simulink to study the safety and reliability of autonomous drone delivery systems. The simulator models 6-DoF flight dynamics and evaluates failure scenarios such as motor loss, wind disturbances, payload variation, and sensor drift using Monte Carlo testing. Across 6000+ simulations, the system achieved a 97.5% successful landing rate while avoiding all people and wildlife in the environment.",
+      image: skyline,
+    },
+    {
+      title: "Blindspot (Hack for Humanity)",
+      description: "Built Blindspot, a wearable assistive vision system that helps visually impaired users interpret their surroundings using computer vision. The system captures images through an ESP32 camera, runs object detection through a lightweight YOLOv8 model, and converts detected objects into audio feedback using Elevenlabs for the user. The project integrates embedded hardware, mobile software, RTOS, and a real-time computer vision backend to enable low-latency scene understanding.",
+      image: H4H,
     },
     {
       title: "AWS Hackathon",
@@ -21,12 +39,7 @@ const Projects = () => {
       image: AWS,
     },
     {
-      title: "Simbas Surveillance",
-      description: "This was a project created during SCUACM's annual Hack 4 Humanity. Our project detected if there were any humans in frame and reported it to main console so park rangers could find them. I worked on writing the person detection code using yolov8 and conecting the front and backend using Flask. https://simbassurveillance.vercel.app/",
-      image: SS,
-    },
-    {
-      title: "AI Game Player",
+      title: "AI Game Agent",
       description: " I used the NEAT algorithm to create a bot that plays the no internet chrome dinosaur game. I used pygame to recreate the game.",
       image: Dino,
     },
